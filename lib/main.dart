@@ -63,7 +63,7 @@ class _RowExpandedExampleState extends State<RowExpandedExample> {
         height: 60,
         color: Colors.grey[200],
         child: Row(
-          // Attribute 1
+          // Attribute 1: Row.children – defines horizontal layout
           children: [
             buildNavItem("Home", 0, Colors.red),
             buildNavItem("Search", 1, Colors.green),
@@ -76,7 +76,7 @@ class _RowExpandedExampleState extends State<RowExpandedExample> {
 
   Expanded buildNavItem(String label, int index, Color color) {
     return Expanded(
-      // Attribute 2
+      // Attribute 2: Expanded.child – makes tab take equal horizontal space
       child: InkWell(
         onTap: () {
           setState(() {
@@ -84,7 +84,7 @@ class _RowExpandedExampleState extends State<RowExpandedExample> {
           });
         },
         child: Container(
-          // Attribute 3
+          // Attribute 3: Container.color – highlights active tab with opacity
           color: selectedIndex == index
               // ignore: deprecated_member_use
               ? color.withOpacity(0.7)
