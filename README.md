@@ -36,6 +36,5 @@ During the live demo, these attributes can be shown affecting the layout and vis
 
 git clone https://github.com/EliseJulio/FlutterWidget.git
 cd FlutterWidget
-cd first_flutterproject_c2
 cd lib
 flutter run
